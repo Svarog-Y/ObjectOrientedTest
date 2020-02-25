@@ -22,7 +22,7 @@ class Checking(Account):
         self.fee = fee
 
     def transfer(self, amount):
-        self.balance = self.balance - amount - fee
+        self.balance = self.balance - amount - self.fee
 
 checking = Checking("balance.txt", 1)
 checking.commit()
